@@ -21,7 +21,6 @@ namespace APITest
 
             WebClient c = new WebClient();
             var data = c.DownloadString(@"C://Users//mivy//Documents//Visual Studio 2015//Projects//APITest//file.json");
-            //Console.WriteLine(data);
             JObject o = JObject.Parse(data);
             Console.WriteLine("Name: " + o["Name"]);
             Console.WriteLine("CanRelist: " + o["CanRelist"]);

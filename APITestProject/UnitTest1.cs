@@ -13,7 +13,7 @@ namespace APITestProject
         public void TestMethod1()
         {
             WebClient c = new WebClient();
-            var data = c.DownloadString(@"C://Users//mivy//Documents//Visual Studio 2015//Projects//APITest//file.json");
+            var data = c.DownloadString("./file.json");
         
             JObject o = JObject.Parse(data);
 
