@@ -13,7 +13,7 @@ namespace APITestProject
         public void TestMethod1()
         {
             WebClient c = new WebClient();
-            var data = c.DownloadString("./file.json");
+            var data = c.DownloadString("https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false");
         
             JObject o = JObject.Parse(data);
 
